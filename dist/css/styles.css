@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #6cbb54;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  min-width: 300px;
+  text-align: center;
+}
+.container .main {
+  margin-bottom: 3.5em;
+}
+.container .main h1 {
+  color: #325727;
+  font-size: 2.5em;
+  margin-bottom: 0.7em;
+}
+.container .main p.p_um {
+  margin-bottom: 0.9em;
+  color: #fff;
+  font-size: 1.2em;
+}
+.container .main p.p_dois {
+  color: rgba(230, 230, 230, 0.7058823529);
+  font-size: 1em;
+  margin-top: 0.6em;
+}
+.container .main p.p_dois span {
+  font-style: italic;
+  font-size: 0.9em;
+}
+.container .main p.p_dois span.num {
+  font-style: normal;
+  color: rgba(237, 247, 234, 0.8509803922);
+}
+.container .main input {
+  padding: 0.9em;
+  width: 3.5em;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #325727;
+  outline: none;
+}
+.container .main button {
+  color: #fff;
+  background-color: #315227;
+  border: none;
+  cursor: pointer;
+  padding: 0.9em 1em;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.container .main button:hover {
+  background-color: #25441c;
+  transition: 0.5s;
+}
+.container .numeros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.container .numeros p {
+  font-size: 1.2em;
+  padding: 0.8em;
+  margin: 0.3em 0.2em;
+  text-align: center;
+  width: 3em;
+  border-radius: 50%;
+  color: #205c0e;
+  background-color: #f0f0f0;
+  border: 2px solid #266413;
+}
+
+@media (max-width: 460px) {
+  .container .main h1 {
+    font-size: 1.9em;
+    margin-bottom: 0.6em;
+  }
+  .container .main p.p_um {
+    font-size: 1.1em;
+  }
+  .container .numeros p {
+    font-size: 1em;
+    padding: 0.7em;
+    margin: 0.4em 0.4em;
+    width: 3em;
+  }
+}

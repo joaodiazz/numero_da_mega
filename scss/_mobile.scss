@@ -1,0 +1,23 @@
+@media (max-width: 460px) {
+  .container {
+    .main {
+      h1 {
+        font-size: 1.9em;
+        margin-bottom: .6em;
+      }
+
+      p.p_um {
+        font-size: 1.1em;
+      }
+    }
+
+    .numeros {
+      p {
+        font-size: 1em;
+        padding: .7em;
+        margin: .4em .4em;
+        width: 3em;
+      }
+    }
+  }
+}

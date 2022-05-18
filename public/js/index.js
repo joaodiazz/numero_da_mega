@@ -1,22 +1,31 @@
 const btn = document.querySelector("#send");
-const info = document.querySelector("#info");
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  let text = "";
+  let numeros = "";
 
   const quant = document.querySelector("#numbers").value;
+  const err = document.querySelector("#err");
+  const err1 = err.getElementsByTagName("h2")[0];
+  const err2 = err.getElementsByTagName("h2")[1];
 
   if (quant >= 6 && quant <= 15) {
-    let i = 1;
-    while (i <= quant) {
-      console.log((text = Math.floor(Math.random() * 60) + 1));
-      i++;
+    for (let i = 1; i <= quant; i++) {
+      numeros += `<p>${Math.floor(Math.random() * 60) + 1}</p>`;
     }
+  } else if (quant < 6 || quant > 15) {
+    err1.classList.remove("hidden");
+    setTimeout(() => {
+      err1.classList.add("hidden");
+    }, 3000);
   } else {
-    console.log("O mínimo é 6 e o máximo é 15");
+    err2.classList.remove("hidden");
+    setTimeout(() => {
+      err2.classList.add("hidden");
+    }, 3000);
   }
 
+  document.querySelector("#info").innerHTML = numeros;
   document.querySelector("#numbers").value = "";
 });

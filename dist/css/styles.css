@@ -23,7 +23,7 @@ body {
   text-align: center;
 }
 .container .main {
-  margin-bottom: 3.5em;
+  margin-bottom: 2em;
 }
 .container .main h1 {
   color: #325727;
@@ -87,6 +87,15 @@ body {
   background-color: #f0f0f0;
   border: 2px solid #266413;
 }
+.container .erro .err_num {
+  color: rgba(201, 12, 12, 0.8901960784);
+}
+.container .erro .err_letra {
+  color: #b11b1b;
+}
+.container .erro .hidden {
+  display: none;
+}
 
 @media (max-width: 460px) {
   .container .main h1 {
@@ -101,5 +110,38 @@ body {
     padding: 0.7em;
     margin: 0.4em 0.4em;
     width: 3em;
+  }
+  .container .erro .err_num {
+    font-size: 1.3em;
+  }
+  .container .erro .err_letra {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 330px) {
+  .container .main {
+    margin-bottom: 1.5em;
+  }
+  .container .main h1 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+  .container .main p.p_um {
+    font-size: 1em;
+  }
+  .container .numeros {
+    margin: 0 20px;
+  }
+  .container .numeros p {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.3em 0.3em;
+    width: 2.5em;
+  }
+  .container .erro .err_num {
+    font-size: 1.1em;
+  }
+  .container .erro .err_letra {
+    font-size: 1.1em;
   }
 }

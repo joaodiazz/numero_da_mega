@@ -19,5 +19,54 @@
         width: 3em;
       }
     }
+
+    .erro {
+      .err_num {
+        font-size: 1.3em;
+      }
+      
+      .err_letra {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .container {
+
+    .main {
+      margin-bottom: 1.5em;
+
+      h1 {
+        font-size: 1.6em;
+        margin-bottom: .5em;
+      }
+
+      p.p_um {
+        font-size: 1em;
+      }
+    }
+
+    .numeros {
+      margin: 0 20px;
+
+      p {
+        font-size: 1em;
+        padding: .5em;
+        margin: .3em .3em;
+        width: 2.5em;
+      }
+    }
+
+    .erro {
+      .err_num {
+        font-size: 1.1em;
+      }
+      
+      .err_letra {
+        font-size: 1.1em;
+      }
+    }
   }
 }

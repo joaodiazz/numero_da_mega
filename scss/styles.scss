@@ -24,7 +24,7 @@ body {
   text-align: center;
 
   .main {
-    margin-bottom: 3.5em;
+    margin-bottom: 2em;
 
     h1 {
       color: #325727;
@@ -96,6 +96,20 @@ body {
       color: #205c0e;
       background-color: #f0f0f0;
       border: 2px solid #266413;
+    }
+  }
+
+  .erro {
+    .err_num {
+      color: #c90c0ce3;
+    }
+
+    .err_letra {
+      color: #b11b1b;
+    }
+
+    .hidden {
+      display: none;
     }
   }
 }
